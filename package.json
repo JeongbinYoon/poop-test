@@ -2,6 +2,7 @@
   "name": "poop-cms",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "scripts": {
     "postinstall": "prisma generate",
     "build": "next build",
