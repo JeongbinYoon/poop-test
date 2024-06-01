@@ -15,7 +15,7 @@ export const authRoutes = ['/auth/login', '/auth/register'];
  * 이 prefix로 시작하는 routes는 API 인증 목적
  * @type {string}
  */
-export const apiAuthPrefix = '/api2/auth';
+export const apiAuthPrefix = '/api/auth';
 
 /*
  * 로그인 후 redirect path
