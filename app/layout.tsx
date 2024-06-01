@@ -2,21 +2,21 @@ import { ThemeProvider } from 'next-themes';
 import { Layout } from 'components/layout';
 import { Toaster } from 'react-hot-toast';
 import { type PropsWithChildren } from 'react';
-import { SessionProvider } from 'next-auth/react';
 import '@/styles/globals.css';
+import AuthProvider from './auth/provider';
 
 const MyApp = ({ children }: PropsWithChildren) => {
   return (
     <html suppressHydrationWarning>
       <body>
-        <SessionProvider>
+        <AuthProvider>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Layout>
               {children}
               <Toaster />
             </Layout>
           </ThemeProvider>
-        </SessionProvider>
+        </AuthProvider>
       </body>
     </html>
   );
